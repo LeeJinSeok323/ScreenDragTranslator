@@ -6,7 +6,7 @@ from core.theme import BG, CARD, ACCENT, TEXT
 class ResultWindow:
     def __init__(self, root, text, x1, x2, sel_y2,
                  close_on_focusout=True,
-                 bg_color=BG, alpha=0.95, text_color=TEXT, card_color=CARD):
+                 bg_color=BG, alpha=0.95, text_color=TEXT, card_color=CARD, font_size=10):
         win = tk.Toplevel(root)
         win.overrideredirect(True)
         win.attributes("-topmost", True)
@@ -25,7 +25,7 @@ class ResultWindow:
         body = tk.Frame(win, bg=bg_color, padx=14, pady=10)
         body.pack()
 
-        box = tk.Text(body, wrap=tk.WORD, font=("Segoe UI", 10), width=50, height=8,
+        box = tk.Text(body, wrap=tk.WORD, font=("Segoe UI", font_size), width=50, height=8,
                       bg=bg_color, fg=text_color, relief="flat",
                       selectbackground=ACCENT, selectforeground="#111",
                       insertwidth=0, padx=4, pady=4)

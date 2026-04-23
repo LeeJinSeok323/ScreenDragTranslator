@@ -4,7 +4,7 @@ import threading
 import keyboard
 import pystray
 from PIL import ImageGrab, ImageEnhance, ImageFilter, Image
-import google.generativeai as genai
+from google import genai
 
 from core.config import (
     APP_NAME, HOTKEY, HOTKEY_EN, MODEL,
@@ -47,11 +47,7 @@ class App:
     # ── 초기화 ────────────────────────────────────────────────
 
     def _make_model(self, key):
-        genai.configure(api_key=key)
-        return genai.GenerativeModel(
-            self.config.get("model", MODEL),
-            generation_config=genai.GenerationConfig(temperature=0)
-        )
+        return genai.Client(api_key=key)
 
     def _init_models(self):
         self._models   = [None, None]
@@ -114,12 +110,13 @@ class App:
             messagebox.showwarning(t("warn_title"), t("warn_no_api"))
             return
         theme = {
-            "bg":     self.config.get("theme_bg",    BG),
-            "card":   self.config.get("theme_card",  CARD),
-            "text":   self.config.get("theme_text",  TEXT),
-            "alpha":  self.config.get("theme_alpha", 0.96),
-            "accent": ACCENT,
-            "muted":  MUTED,
+            "bg":        self.config.get("theme_bg",    BG),
+            "card":      self.config.get("theme_card",  CARD),
+            "text":      self.config.get("theme_text",  TEXT),
+            "alpha":     self.config.get("theme_alpha", 0.96),
+            "accent":    ACCENT,
+            "muted":     MUTED,
+            "font_size": self.config.get("font_size", 10),
         }
         cfg_lang = self.config.get("language", "en")
         default_target = "id" if cfg_lang == "en" else "en"
@@ -193,13 +190,17 @@ class App:
 
     def _translate_with_fallback(self, payload):
         other_idx = 1 - self._model_idx
+        model_name = self.config.get("model", MODEL)
+        cfg = genai.types.GenerateContentConfig(temperature=0)
         try:
-            response = self.model.generate_content(payload)
+            response = self.model.models.generate_content(
+                model=model_name, contents=payload, config=cfg)
             return response.text.strip() if response.text else t("ocr_fail")
         except Exception as e:
             if self._is_rate_limit(e) and self._models[other_idx]:
                 self._model_idx = other_idx
-                response = self.model.generate_content(payload)
+                response = self.model.models.generate_content(
+                    model=model_name, contents=payload, config=cfg)
                 return response.text.strip() if response.text else t("ocr_fail")
             raise
 
@@ -212,7 +213,8 @@ class App:
         self.root.after(0, loader.close)
         self.root.after(0, lambda: ResultWindow(
             self.root, text, x1, x2, y2,
-            close_fo, bg_color, alpha, text_color, card_color))
+            close_fo, bg_color, alpha, text_color, card_color,
+            self.config.get("font_size", 10)))
 
     # ── 시작 토스트 ───────────────────────────────────────────
 

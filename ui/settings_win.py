@@ -202,6 +202,21 @@ class SettingsWindow:
         tk.Label(alpha_row, textvariable=self._alpha_var,
                  bg=BG, fg=MUTED, font=("Segoe UI", 8), width=4).pack(side="left", padx=(6, 0))
 
+        sep(tab)
+
+        tk.Label(tab, text=t("font_size_label"), bg=BG, fg=MUTED,
+                 font=("Segoe UI", 8)).pack(anchor="w", padx=P, pady=(0, 6))
+        font_row = tk.Frame(tab, bg=BG)
+        font_row.pack(anchor="w", padx=P)
+        self._font_size_var = tk.IntVar(value=config.get("font_size", 10))
+        tk.Scale(font_row, from_=8, to=24, resolution=1, orient="horizontal",
+                 variable=self._font_size_var, length=240,
+                 bg=BG, fg=TEXT, troughcolor=CARD, highlightthickness=0,
+                 activebackground=ACCENT, sliderrelief="flat", font=("Segoe UI", 7)
+                 ).pack(side="left")
+        tk.Label(font_row, textvariable=self._font_size_var,
+                 bg=BG, fg=MUTED, font=("Segoe UI", 8), width=4).pack(side="left", padx=(6, 0))
+
     def _build_general_tab(self, tab, config, P, win):
         self._add_save_btn(tab, win, P)
         tk.Label(tab, text=t("result_close_label"), bg=BG, fg=MUTED,
@@ -316,6 +331,7 @@ class SettingsWindow:
         self.config["theme_text"]        = theme_text(self._bg_color)
         self.config["theme_card"]        = theme_card(self._bg_color)
         self.config["theme_alpha"]       = round(self._alpha_var.get(), 2)
+        self.config["font_size"]         = self._font_size_var.get()
         save_config(self.config)
         set_autostart(autostart)
         self.on_save(key)

@@ -10,13 +10,14 @@ _TARGET_LANGS = [("EN", "en"), ("ID", "id"), ("ES", "es"), ("KO", "ko")]
 
 class InputWindow:
     def __init__(self, root, translate_fn, theme=None, default_target="en"):
-        th     = theme or {}
-        bg     = th.get("bg",     BG)
-        card   = th.get("card",   CARD)
-        accent = th.get("accent", ACCENT)
-        text   = th.get("text",   TEXT)
-        muted  = th.get("muted",  MUTED)
-        alpha  = th.get("alpha",  0.96)
+        th        = theme or {}
+        bg        = th.get("bg",        BG)
+        card      = th.get("card",      CARD)
+        accent    = th.get("accent",    ACCENT)
+        text      = th.get("text",      TEXT)
+        muted     = th.get("muted",     MUTED)
+        alpha     = th.get("alpha",     0.96)
+        font_size = th.get("font_size", 11)
 
         self._translate_fn = translate_fn
         self._busy         = False
@@ -63,7 +64,7 @@ class InputWindow:
             self._lang_btns[lang_code] = btn
         self._update_lang_btns()
 
-        self.entry = tk.Entry(body, font=("Segoe UI", 11), bg=card, fg=text,
+        self.entry = tk.Entry(body, font=("Segoe UI", font_size), bg=card, fg=text,
                               relief="flat", insertbackground=accent, bd=0,
                               disabledbackground=muted, disabledforeground="#333333")
         self.entry.pack(fill="x", ipady=8)
