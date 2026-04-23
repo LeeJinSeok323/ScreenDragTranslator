@@ -1,0 +1,55 @@
+{
+  "tab_basic":            "  Basic  ",
+  "tab_hotkey":           "  Hotkeys  ",
+  "tab_theme":            "  Theme  ",
+  "tab_general":          "  General  ",
+
+  "api_key_1_label":      "API Key 1 (Primary)",
+  "api_key_2_label":      "API Key 2 (Backup)",
+  "show":                 "Show",
+  "hide":                 "Hide",
+  "get_key":              "Get Key",
+  "tooltip_key2":         "With 2 keys registered, when the first key hits\nits rate limit, the app automatically switches\nto the second key to continue translating.",
+
+  "gemini_model_label":   "Gemini Model",
+  "recommended":          "recommended",
+  "language_label":       "Language",
+
+  "hotkey_hint":          "Click the field, then press your desired key combo",
+  "hotkey_screen_label":  "Screen Translate",
+  "hotkey_en_label":      "KO→EN Input",
+  "reset":                "Reset",
+  "hotkey_press":         "Press a key...",
+
+  "theme_bg_label":       "Background Color",
+  "theme_alpha_label":    "Opacity",
+  "font_size_label":      "Font Size",
+
+  "result_close_label":   "Close Result Window",
+  "close_on_focusout":    "Close automatically when clicking elsewhere",
+  "close_on_btn":         "Close only with X button",
+  "autostart_label":      "Launch on Windows startup",
+
+  "save":                 "Save",
+  "warn_title":           "Warning",
+  "err_title":            "Error",
+  "warn_no_api_key":      "Please enter API Key 1.",
+
+  "input_header":         "Auto Translate",
+  "input_auto_src":       "Auto Detect→",
+  "input_hint":           "Enter to translate  ·  Esc to close",
+  "translating":          "Translating...",
+  "error_prefix":         "Error: ",
+
+  "overlay_hint":         "Drag to select area  ·  Esc to cancel",
+  "loading_text":         "Translating",
+
+  "warn_no_api":          "Please set your API key first.",
+  "err_hotkey":           "Failed to register hotkey: {e}\nTry running as administrator.",
+  "err_gemini_init":      "Gemini initialization failed: {e}",
+  "err_autostart":        "Failed to set autostart: {e}",
+  "translate_error":      "[Translation Error]\n{etype}: {e}",
+  "ocr_fail":             "(Recognition failed)",
+  "toast_hint":           "{hk} Translate  ·  {hk_en} KO→EN",
+  "err_loader":           "Failed to create LoadingIndicator: {e}"
+}

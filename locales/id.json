@@ -1,0 +1,55 @@
+{
+  "tab_basic":            "  Dasar  ",
+  "tab_hotkey":           "  Hotkey  ",
+  "tab_theme":            "  Tema  ",
+  "tab_general":          "  Umum  ",
+
+  "api_key_1_label":      "API Key 1 (Utama)",
+  "api_key_2_label":      "API Key 2 (Cadangan)",
+  "show":                 "Tampil",
+  "hide":                 "Sembunyikan",
+  "get_key":              "Dapatkan Key",
+  "tooltip_key2":         "Dengan 2 key terdaftar, jika key pertama mencapai\nbatas rate limit, aplikasi otomatis beralih ke\nkey kedua untuk melanjutkan terjemahan.",
+
+  "gemini_model_label":   "Model Gemini",
+  "recommended":          "disarankan",
+  "language_label":       "Bahasa",
+
+  "hotkey_hint":          "Klik kolom, lalu tekan kombinasi tombol yang diinginkan",
+  "hotkey_screen_label":  "Terjemahkan Layar",
+  "hotkey_en_label":      "Input KO→EN",
+  "reset":                "Reset",
+  "hotkey_press":         "Tekan tombol...",
+
+  "theme_bg_label":       "Warna Latar",
+  "theme_alpha_label":    "Transparansi",
+  "font_size_label":      "Ukuran Font",
+
+  "result_close_label":   "Tutup Jendela Hasil",
+  "close_on_focusout":    "Tutup otomatis saat klik di luar",
+  "close_on_btn":         "Tutup hanya dengan tombol X",
+  "autostart_label":      "Jalankan saat Windows mulai",
+
+  "save":                 "Simpan",
+  "warn_title":           "Peringatan",
+  "err_title":            "Error",
+  "warn_no_api_key":      "Masukkan API Key 1.",
+
+  "input_header":         "Terjemah Otomatis",
+  "input_auto_src":       "Deteksi Otomatis→",
+  "input_hint":           "Enter untuk terjemah  ·  Esc untuk tutup",
+  "translating":          "Menerjemahkan...",
+  "error_prefix":         "Error: ",
+
+  "overlay_hint":         "Seret untuk pilih area  ·  Esc untuk batal",
+  "loading_text":         "Menerjemahkan",
+
+  "warn_no_api":          "Silakan atur API key Anda terlebih dahulu.",
+  "err_hotkey":           "Gagal mendaftarkan hotkey: {e}\nCoba jalankan sebagai administrator.",
+  "err_gemini_init":      "Inisialisasi Gemini gagal: {e}",
+  "err_autostart":        "Gagal mengatur autostart: {e}",
+  "translate_error":      "[Error Terjemahan]\n{etype}: {e}",
+  "ocr_fail":             "(Pengenalan gagal)",
+  "toast_hint":           "{hk} Terjemah  ·  {hk_en} KO→EN",
+  "err_loader":           "Gagal membuat LoadingIndicator: {e}"
+}

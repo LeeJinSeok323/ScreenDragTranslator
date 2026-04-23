@@ -1,0 +1,55 @@
+{
+  "tab_basic":            "  기본설정  ",
+  "tab_hotkey":           "  단축키  ",
+  "tab_theme":            "  테마  ",
+  "tab_general":          "  일반  ",
+
+  "api_key_1_label":      "API Key 1 (주)",
+  "api_key_2_label":      "API Key 2 (예비)",
+  "show":                 "표시",
+  "hide":                 "숨김",
+  "get_key":              "키 발급",
+  "tooltip_key2":         "키를 2개 등록하면 첫 번째 키가 비율 제한에\n걸렸을 때 자동으로 두 번째 키로 전환하여\n번역을 이어갑니다.",
+
+  "gemini_model_label":   "Gemini 모델",
+  "recommended":          "권장",
+  "language_label":       "언어",
+
+  "hotkey_hint":          "입력칸 클릭 후 원하는 키 조합을 누르세요",
+  "hotkey_screen_label":  "화면 번역",
+  "hotkey_en_label":      "한→EN 입력",
+  "reset":                "초기화",
+  "hotkey_press":         "키를 누르세요...",
+
+  "theme_bg_label":       "배경색",
+  "theme_alpha_label":    "투명도",
+  "font_size_label":      "글자 크기",
+
+  "result_close_label":   "번역 결과창 닫기",
+  "close_on_focusout":    "다른 곳 클릭 시 자동으로 닫기",
+  "close_on_btn":         "X 버튼으로만 닫기",
+  "autostart_label":      "Windows 시작 시 자동 실행",
+
+  "save":                 "저장",
+  "warn_title":           "경고",
+  "err_title":            "오류",
+  "warn_no_api_key":      "API Key 1을 입력하세요.",
+
+  "input_header":         "자동번역",
+  "input_auto_src":       "자동감지→",
+  "input_hint":           "Enter 번역  ·  Esc 닫기",
+  "translating":          "번역 중...",
+  "error_prefix":         "오류: ",
+
+  "overlay_hint":         "드래그하여 영역 선택  ·  Esc 취소",
+  "loading_text":         "번역 중",
+
+  "warn_no_api":          "API 키를 먼저 설정하세요.",
+  "err_hotkey":           "단축키 등록 실패: {e}\n관리자 권한으로 실행해보세요.",
+  "err_gemini_init":      "Gemini 초기화 실패: {e}",
+  "err_autostart":        "자동 시작 설정 실패: {e}",
+  "translate_error":      "[번역 오류]\n{etype}: {e}",
+  "ocr_fail":             "(인식 실패)",
+  "toast_hint":           "{hk} 번역  ·  {hk_en} 한→EN",
+  "err_loader":           "LoadingIndicator 생성 실패: {e}"
+}

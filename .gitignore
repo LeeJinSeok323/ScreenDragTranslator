@@ -1,0 +1,15 @@
+# 빌드 산출물
+build/
+dist/*.exe
+dist/*.zip
+
+# 설정 (API 키 포함)
+config.json
+
+# Python 캐시
+__pycache__/
+*.pyc
+*.pyo
+
+# PyInstaller
+*.spec.bak

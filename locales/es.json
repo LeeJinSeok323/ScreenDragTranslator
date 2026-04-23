@@ -1,0 +1,55 @@
+{
+  "tab_basic":            "  Básico  ",
+  "tab_hotkey":           "  Atajos  ",
+  "tab_theme":            "  Tema  ",
+  "tab_general":          "  General  ",
+
+  "api_key_1_label":      "API Key 1 (Principal)",
+  "api_key_2_label":      "API Key 2 (Respaldo)",
+  "show":                 "Mostrar",
+  "hide":                 "Ocultar",
+  "get_key":              "Obtener Key",
+  "tooltip_key2":         "Con 2 claves registradas, cuando la primera alcance\nel límite de velocidad, la app cambiará automáticamente\na la segunda para continuar traduciendo.",
+
+  "gemini_model_label":   "Modelo Gemini",
+  "recommended":          "recomendado",
+  "language_label":       "Idioma",
+
+  "hotkey_hint":          "Haz clic en el campo y pulsa la combinación deseada",
+  "hotkey_screen_label":  "Traducir Pantalla",
+  "hotkey_en_label":      "Entrada KO→EN",
+  "reset":                "Restablecer",
+  "hotkey_press":         "Presiona una tecla...",
+
+  "theme_bg_label":       "Color de Fondo",
+  "theme_alpha_label":    "Opacidad",
+  "font_size_label":      "Tamaño de Fuente",
+
+  "result_close_label":   "Cerrar Ventana de Resultado",
+  "close_on_focusout":    "Cerrar automáticamente al hacer clic fuera",
+  "close_on_btn":         "Cerrar solo con el botón X",
+  "autostart_label":      "Iniciar con Windows",
+
+  "save":                 "Guardar",
+  "warn_title":           "Advertencia",
+  "err_title":            "Error",
+  "warn_no_api_key":      "Por favor introduce API Key 1.",
+
+  "input_header":         "Traducción Auto",
+  "input_auto_src":       "Detección Auto→",
+  "input_hint":           "Enter para traducir  ·  Esc para cerrar",
+  "translating":          "Traduciendo...",
+  "error_prefix":         "Error: ",
+
+  "overlay_hint":         "Arrastra para seleccionar área  ·  Esc para cancelar",
+  "loading_text":         "Traduciendo",
+
+  "warn_no_api":          "Por favor configura tu API key primero.",
+  "err_hotkey":           "Error al registrar atajo: {e}\nIntenta ejecutar como administrador.",
+  "err_gemini_init":      "Error al inicializar Gemini: {e}",
+  "err_autostart":        "Error al configurar inicio automático: {e}",
+  "translate_error":      "[Error de Traducción]\n{etype}: {e}",
+  "ocr_fail":             "(Reconocimiento fallido)",
+  "toast_hint":           "{hk} Traducir  ·  {hk_en} KO→EN",
+  "err_loader":           "Error al crear LoadingIndicator: {e}"
+}
