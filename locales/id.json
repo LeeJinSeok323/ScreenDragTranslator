@@ -50,6 +50,8 @@
   "err_autostart":        "Gagal mengatur autostart: {e}",
   "translate_error":      "[Error Terjemahan]\n{etype}: {e}",
   "ocr_fail":             "(Pengenalan gagal)",
+  "tray_settings":        "Pengaturan",
+  "tray_quit":            "Keluar",
   "toast_hint":           "{hk} Terjemah  ·  {hk_en} KO→EN",
   "err_loader":           "Gagal membuat LoadingIndicator: {e}"
 }

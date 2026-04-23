@@ -50,6 +50,8 @@
   "err_autostart":        "자동 시작 설정 실패: {e}",
   "translate_error":      "[번역 오류]\n{etype}: {e}",
   "ocr_fail":             "(인식 실패)",
+  "tray_settings":        "설정",
+  "tray_quit":            "종료",
   "toast_hint":           "{hk} 번역  ·  {hk_en} 한→EN",
   "err_loader":           "LoadingIndicator 생성 실패: {e}"
 }

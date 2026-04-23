@@ -50,6 +50,8 @@
   "err_autostart":        "Error al configurar inicio automático: {e}",
   "translate_error":      "[Error de Traducción]\n{etype}: {e}",
   "ocr_fail":             "(Reconocimiento fallido)",
+  "tray_settings":        "Configuración",
+  "tray_quit":            "Salir",
   "toast_hint":           "{hk} Traducir  ·  {hk_en} KO→EN",
   "err_loader":           "Error al crear LoadingIndicator: {e}"
 }

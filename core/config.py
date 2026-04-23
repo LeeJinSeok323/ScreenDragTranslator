@@ -5,7 +5,7 @@ import winreg
 from tkinter import messagebox
 from core.i18n import t
 
-APP_NAME  = "NexusTK 드래그 번역기 v1.0"
+APP_NAME  = "NexusTK DragTranslater"
 REG_KEY   = "NexusTK번역기"
 HOTKEY    = "alt+q"
 HOTKEY_EN = "alt+e"

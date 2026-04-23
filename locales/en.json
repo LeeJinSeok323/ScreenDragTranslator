@@ -50,6 +50,8 @@
   "err_autostart":        "Failed to set autostart: {e}",
   "translate_error":      "[Translation Error]\n{etype}: {e}",
   "ocr_fail":             "(Recognition failed)",
+  "tray_settings":        "Settings",
+  "tray_quit":            "Quit",
   "toast_hint":           "{hk} Translate  ·  {hk_en} KO→EN",
   "err_loader":           "Failed to create LoadingIndicator: {e}"
 }

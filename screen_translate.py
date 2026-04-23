@@ -78,10 +78,10 @@ class App:
         menu = pystray.Menu(
             pystray.MenuItem(APP_NAME, None, enabled=False),
             pystray.Menu.SEPARATOR,
-            pystray.MenuItem("설정", lambda: self.root.after(0, self._show_settings)),
-            pystray.MenuItem("종료", self._quit)
+            pystray.MenuItem(t("tray_settings"), lambda: self.root.after(0, self._show_settings)),
+            pystray.MenuItem(t("tray_quit"), self._quit)
         )
-        self.tray = pystray.Icon("NexusTK", img, APP_NAME, menu)
+        self.tray = pystray.Icon("NexusTK DragTranslater", img, APP_NAME, menu)
         threading.Thread(target=self.tray.run, daemon=True).start()
 
     def _register_hotkeys(self):
